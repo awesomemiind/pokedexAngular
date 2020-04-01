@@ -1,0 +1,25 @@
+.poke-list-item {
+  position: relative;
+  padding: 10px 10px 10px 40px;
+  border: 1px solid black;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  cursor: pointer;
+  list-style: none;
+  background-color: #333;
+  color: white; }
+  .poke-list-item::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    border: 8px solid #999;
+    border-radius: 10px; }
+  .poke-list-item.poke-captured::before {
+    content: url("//github.com/hanashiro/pokedex/blob/master/app/images/pokeball.svg");
+    border: 0; }
+  .poke-list-item:hover {
+    background-color: #555; }
+
+.poke-list-item img {
+  max-height: 45px;
+}

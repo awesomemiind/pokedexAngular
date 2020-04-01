@@ -6,11 +6,6 @@
   *ngIf="currentPokemon !== null"
   [src]="pokeSprite"
 >
-
 <ul class="poke-list">
-  <li class="poke-list-item" *ngFor="let pokemon of pokemonList" (mouseenter)="selectPokemon(pokemon)">
-    <img src="//raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{{pokemon.number}}.png">
-    <span>{{ pokemon.number }} - {{ pokemon.name}}</span>
-
-  </li>
-</ul>   
+  <app-list-item *ngFor="let pokemon of pokemonList" [pokemon]="pokemon" (mouseenter)="selectPokemon(pokemon)"></app-list-item>
+</ul>
