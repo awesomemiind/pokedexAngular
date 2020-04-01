@@ -9,3 +9,19 @@ binds
 
   Adicionar style inline com bind
   - [style.display]="classeEscolhida.value == 1 ? 'none' : 'block'"
+
+Diretivas servem para tratar algum evento do elemento
+
+@Input
+@Output
+
+
+Pipe trata o output
+
+Listeners de eventos
+
+@Hostbind
+@hostListeners
+
+elementRef
+Renderer2
