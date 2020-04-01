@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "pokedexAngular"
+    }
+  },
+  "defaultProject": "pokedexAngular",
+  "cli": {
+    "analytics": false
+  }
 }
