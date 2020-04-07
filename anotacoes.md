@@ -15,6 +15,8 @@ Diretivas servem para tratar algum evento do elemento
 @Input
 @Output
 
+:host
+::ng-deep
 
 Pipe trata o output
 
@@ -22,6 +24,12 @@ Listeners de eventos
 
 @Hostbind
 @hostListeners
+
+setValue(): Serve para alterar todos os campos do formulário;
+
+patchValue(): Serve para alterar apenas alguns campos do formulário;
+
+resetForm(): Reseta o formulário inteiro.
 
 elementRef
 Renderer2
