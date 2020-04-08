@@ -1,3 +1,4 @@
+import { InformationGuard } from './guards/information.guard';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
@@ -6,7 +7,7 @@ import { ListComponent } from './views/list/list.component';
 
 const routes: Routes = [
   {path: 'pokedex', component: ListComponent},
-  {path: 'pokedex/view/:number', component: InformationComponent},
+  {path: 'pokedex/view/:number', component: InformationComponent, canActivate: [InformationGuard]},
   {path: '**', redirectTo: '/pokedex', pathMatch: 'full'},
   
 ];

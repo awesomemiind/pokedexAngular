@@ -1,8 +1,8 @@
 binds
   - interpolação = {}
-  - state propriety = [src]
+  - state propriety = [src] -> Significa que o valor desta propriedade sera uma variavel da classe
   - (input) = "nome = $event.target.value
-  -[(ngModel)]="nome"
+  -[(ngModel)]="nome" 
 
   Adicionar classe de acordo com bind
   - [classe.Nomeclasse]="algo for verdadeiro"
@@ -33,3 +33,5 @@ resetForm(): Reseta o formulário inteiro.
 
 elementRef
 Renderer2
+
+Animation angular

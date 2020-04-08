@@ -3,6 +3,7 @@ import { FormsModule} from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ListComponent } from './views/list/list.component';
@@ -22,7 +23,8 @@ import { InformationComponent } from './views/information/information.component'
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

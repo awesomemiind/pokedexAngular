@@ -1,5 +1,5 @@
 <a routerLink="./view/{{ pokemon.number }}" style="text-decoration: none; color: white;">
-  <li class="poke-list-item">
+  <li class="poke-list-item" @listItemState>
     <img src="//raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{{pokemon.number}}.png">
     <span>{{ pokemon.number }} - {{ pokemon.name}}</span>
   </li>
